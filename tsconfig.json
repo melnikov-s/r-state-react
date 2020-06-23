@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"rootDir": "src",
+		"target": "es6",
+		"alwaysStrict": false,
+		"sourceMap": false,
+		"removeComments": true,
+		"strict": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"lib": ["es6"],
+		"strictNullChecks": true,
+		"declaration": true,
+		"declarationDir": "./lib",
+		"outDir": "./dist",
+		"jsx": "react",
+		"jsxFactory": "createElement"
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}

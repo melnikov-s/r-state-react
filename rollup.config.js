@@ -6,7 +6,7 @@ module.exports = {
 	plugins: [typescript()],
 	output: [
 		{
-			file: `lib/.${name}.umd.js`,
+			file: `lib/${name}.js`,
 			format: "umd",
 			name,
 			sourcemap: true,

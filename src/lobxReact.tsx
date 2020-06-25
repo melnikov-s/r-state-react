@@ -3,14 +3,15 @@ import { graph } from "r-state-tree";
 import * as lobxReact from "lobx-react";
 const graphOptions = { graph };
 
-export function observer(
-	fn: Parameters<typeof lobxReact.observer>[0]
-): ReturnType<typeof lobxReact.observer> {
-	return lobxReact.observer(fn, graphOptions);
+export function observer<P extends object>(
+	baseComponent: React.FunctionComponent<P>
+): React.FunctionComponent<P> {
+	return lobxReact.observer(baseComponent, graphOptions);
 }
 
-export function Observer(
-	props: Parameters<typeof lobxReact.Observer>[0]
-): ReturnType<typeof lobxReact.Observer> {
+export function Observer(props: {
+	children?(): React.ReactElement<unknown>;
+	render?(): React.ReactElement<unknown>;
+}): JSX.Element {
 	return <lobxReact.Observer graph={graph} {...props} />;
 }

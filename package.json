@@ -1,8 +1,8 @@
 {
 	"name": "r-state-react",
-	"version": "0.1.0-rc1",
+	"version": "0.1.0-rc2",
 	"description": "react bindings for r-state-tree",
-	"main": "lib/r-state-react.umd.js",
+	"main": "lib/r-state-react.js",
 	"module": "lib/r-state-react.module.js",
 	"types": "lib/index.d.ts",
 	"files": [
@@ -50,9 +50,9 @@
 		"typescript": "^3.9.5"
 	},
 	"dependencies": {
-		"lobx-react": "^0.1.0-rc4"
+		"lobx-react": "latest"
 	},
 	"peerDependencies": {
-		"r-state-tree": "^0.1.0-rc1"
+		"r-state-tree": "latest"
 	}
 }
